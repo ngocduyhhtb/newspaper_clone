@@ -1,0 +1,12 @@
+.app-mat-side-nav .app-side-nav-container {
+  width: 300px;
+}
+.app-mat-side-nav .app-side-nav-container .app-side-nav-content .app-side-nav-item {
+  cursor: pointer;
+  transition: background-color 0.2s ease-in;
+}
+.app-mat-side-nav .app-side-nav-container .app-side-nav-content .app-side-nav-item:hover {
+  background-color: #303030;
+}
+
+/*# sourceMappingURL=app.component.css.map */

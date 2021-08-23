@@ -1,0 +1,38 @@
+.content-loading {
+  height: 99vh;
+  display: flex;
+}
+.content-loading .spinner {
+  margin: auto;
+  display: inline-block;
+}
+
+.post-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  grid-auto-flow: row;
+  margin: 20px;
+  background-color: #303030;
+}
+.post-container .post-card {
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease-in-out;
+}
+.post-container .post-card:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  transform: scale(1.02);
+}
+.post-container .post-card .post-header {
+  cursor: pointer;
+  height: 100px;
+}
+.post-container .post-card .post-description {
+  margin-top: auto;
+}
+.post-container .post-card .post-action {
+  margin-top: auto;
+}
+
+/*# sourceMappingURL=post.component.css.map */

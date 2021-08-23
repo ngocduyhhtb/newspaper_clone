@@ -1,0 +1,26 @@
+<div *ngIf="loading; else dataBlock" class="content-loading">
+  <div class="spinner">
+    <mat-spinner></mat-spinner>
+  </div>
+</div>
+<ng-template #dataBlock>
+  <div class="post-container">
+    <mat-card class="post-card" *ngFor="let post of newPosts">
+      <mat-card-header class="post-header" routerLink="/detail"
+                       [state]="{data: {post: post, suggestPost: newPosts.slice(1,4)}}">
+        <mat-card-title>{{post.title}}</mat-card-title>
+        <mat-card-subtitle>
+          {{post.author}}
+        </mat-card-subtitle>
+      </mat-card-header>
+      <img class="post-image" mat-card-image src="{{post.urlToImage}}" alt="Thumbnail">
+      <mat-card-content class="post-description">
+        {{post.description}}
+      </mat-card-content>
+      <mat-card-actions class="post-action">
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</ng-template>

@@ -1,0 +1,24 @@
+.post-detail-container {
+  margin: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.post-detail-container .post-detail-card {
+  flex: 0.69;
+}
+.post-detail-container .post-detail-suggest {
+  flex: 0.29;
+  color: white;
+}
+.post-detail-container .post-detail-suggest .post-suggest-header {
+  background-color: #424242;
+  padding: 14px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+}
+.post-detail-container .post-detail-suggest .post-suggest-container .post-suggest-item {
+  height: auto;
+  margin-top: 8px;
+}
+
+/*# sourceMappingURL=detail-post.component.css.map */
